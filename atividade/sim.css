@@ -1,0 +1,40 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+/* Header com gradiente original */
+.header-gradient {
+  background: linear-gradient(90deg, black, #222);
+  color: white;
+}
+
+/* Hover vermelho nos links da nav */
+.navbar-dark .nav-link:hover { color: red !important; }
+
+/* Botão preto vira vermelho no hover */
+.btn-hover-red:hover { background: red !important; border-color: red !important; }
+
+/* Títulos das seções */
+section h2 { margin-bottom: 20px; }
+
+.galeria-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.galeria-scroll:active {
+  cursor: grabbing;
+}
+
+.galeria-item {
+  flex: 0 0 auto;
+  width: 280px;
+  scroll-snap-align: start;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: auto;      
+  display: block;
+}
